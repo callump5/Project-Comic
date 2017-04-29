@@ -1,0 +1,19 @@
+{
+  "name": "project-comic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callump5/Project-Comic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callump5/Project-Comic/issues"
+  },
+  "homepage": "https://github.com/callump5/Project-Comic#readme"
+}
