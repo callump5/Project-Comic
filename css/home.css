@@ -1,0 +1,43 @@
+    #homeT{
+    	text-align: justify;
+    	margin-bottom: 75px;
+    }
+
+    #landingHeader{
+    	text-align: center;
+    	font-size: 26px;
+    }
+
+    .landingContent{
+    	font-size: 20px;
+    }
+
+	
+/* Phone */
+@media screen and (max-width: 924px) {
+	
+}
+
+/*Tablets*/
+@media  screen and (min-width: 925px) {
+	#homeT{
+		width: 30%;
+		float: right;
+		text-align: right;
+		margin-top: 30px;
+		margin-right: 30px;
+	}
+
+	#landingHeader{
+    	text-align: right;
+  	}
+}
+
+/*Laptops+*/
+@media screen and (min-width: 1681px) {
+	#homeT{
+		margin-top: 30px;
+		margin-right: 80px;
+	}
+	
+}
