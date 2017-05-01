@@ -1,7 +1,7 @@
 /* Fonts: */
 @font-face{
 	font-family: "myfont";
-	src: url("file:///C:/Users/Callum/Desktop/Project-One/fonts/BankGothic%20Bold.ttf") format("truetype");
+	src: url("/fonts/BankGothic%20Bold.ttf") format("truetype");
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif
 }
 
@@ -60,6 +60,8 @@ button {
 	#navbar{
 		display: flex;
 		flex-direction: column;
+		position: relative;
+		z-index: 100;
 	}
 
 	#button {
@@ -112,8 +114,7 @@ button {
     	padding-top: 20px;
     	padding-right: 10px;
     	padding-left: 10px;
-    	text-align: left;
-    }
+    	text-align: left;    }
 	
 /* Phone */
 @media screen and (max-width: 924px) {

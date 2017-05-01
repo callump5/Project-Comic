@@ -7,8 +7,8 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/accounts/register', {
+    .when('/char', {
         templateUrl: 'templates/char.html',
-        controller: 'RegisterController'
+        controller: 'CharController'
     });
 });
