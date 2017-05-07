@@ -31,6 +31,7 @@ button {
 		align-items: baseline;
 		font-size: 1.3em;
 		position:fixed;
+		z-index: 100;
    		top:0px;
    		left:0px;
     	right:0px;
@@ -114,7 +115,8 @@ button {
     	padding-top: 20px;
     	padding-right: 10px;
     	padding-left: 10px;
-    	text-align: left;    }
+    	text-align: left; 
+    }
 	
 /* Phone */
 @media screen and (max-width: 924px) {

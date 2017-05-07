@@ -10,5 +10,10 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     .when('/char', {
         templateUrl: 'templates/char.html',
         controller: 'CharController'
+    })
+    .when('/info', {
+    	templateUrl: 'templates/info.html',
+    	controller: 'InfoController'
     });
+
 });

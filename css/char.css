@@ -1,16 +1,14 @@
-#row1 h2 {
-	font-size: 25px;
+#row1 h2, button {
 	font-family: "myfont", Tahoma;
 }
 
 #viewC{
-	background-image: url(/imgs/floor.jpg);
+	background-image: url(/imgs/floor.jpg); 
 	border: 4px solid #d3d3d3;
 	border-radius: 10px;
-    position: relative;
-	z-index: -1;
 	color: #d3d3d3;
 	margin: 0 10px;
+	margin-bottom: 50px;
 }
 
 #title{
@@ -35,17 +33,35 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#52b152',GradientType=1 ); 
 }
 
+
 .tile img {
 	border: 2px solid #d3d3d3;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .tile h2 {
+	flex: 2;
+}
+
+.tile button {
+	float: right;
+	color: black;
+	margin-right: 15px;
+	color: #d3d3d3;
+	font-size: 20px;
+	
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+
+
 }
 
 /* Phone */
 @media screen and (max-width: 924px) {
-	
+		
 }
 
 /*Tablets*/

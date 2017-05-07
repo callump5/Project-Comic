@@ -5,7 +5,26 @@
 				<h1>Characters</h1>
 			</div>
 		</div>
-
-		
+			
+		<input type="text" ng-model="filter" placeholder="Filter the list">
+            
+        <div ng-repeat="item in items | filter:{ name: filter }" class="tile">
+       	  	<img src="{{item.img}}">
+       	  	<h2>{{item.name}}</h2>
+       	   	<a href="/info"  onclick="select()" ng-click="getResult($index, item)">info</a>
+        </div>
+    
+        <h2>Results</h2>
+  	    <p><code>$index:</code> {{indexResult.name}}</p>
+  	    <p><code>item:</code> {{itemResult.name}}</p>
+	
 	</div>
 </div>
+
+
+<!--<div  class="tile" ng-repeat="x in chars">
+				<img src="{{x.img}}">
+				<h2>{{x.name}}</h2>
+				<button class="buttonN" ng-click="Sremove($index)">info</button>
+				<p></p>
+				-->7

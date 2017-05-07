@@ -32,3 +32,7 @@ var ganeth16 = new character("Ganeth", "guardian", "", "The Wise")
 
 var characters = [halJordan, sinestro, saintWalker, carolFarris, razor, ganeth1, ganeth2, ganeth3, ganeth4, ganeth5, ganeth6, ganeth7, ganeth8, ganeth9, ganeth10, ganeth11, ganeth12, ganeth13, ganeth14, ganeth15, ganeth16]
 
+var newChar = [];
+
+
+    		
