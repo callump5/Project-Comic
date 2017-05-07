@@ -1,10 +1,10 @@
 angular.module('SelectionService', [])
 		.service('dataService', function(){
   			
-  			var charInfo = [];
-
+  			var charInfo = 0
+  			
   			var addInfo = function(newObj) {
-    			charInfo.push(newObj);
+    			charInfo = newObj;
  			}
 
   			var getInfo = function(){

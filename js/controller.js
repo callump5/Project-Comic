@@ -8,15 +8,14 @@
     
         $scope.items = characters;
 
-        $scope.getResult = function($index, item) {
-        $scope.indexResult = $scope.items[$index];
-        $scope.itemResult = item;
-        $scope.someData = item;
+        $scope.getResult = function($index) {
+        $scope.indexResult = $index;
         
-        dataService.addInfo($scope.someData);
+        dataService.addInfo($scope.indexResult);
         };
     }])
 
     .controller('InfoController', ["$scope", 'dataService',  function($scope, dataService) {
         $scope.info = dataService.getInfo();
+        $scope.char = characters[$scope.info];
     }]);
