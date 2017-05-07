@@ -4,22 +4,19 @@
         
     })
 
-    .controller('CharController', ['$scope', function($scope, selectionService) {
+    .controller('CharController', ['$scope', 'dataService', function($scope, dataService) {
     
         $scope.items = characters;
-      
+
         $scope.getResult = function($index, item) {
         $scope.indexResult = $scope.items[$index];
         $scope.itemResult = item;
+        $scope.someData = item;
+        
+        dataService.addInfo($scope.someData);
         };
-
-        $scope.callToAddSelectionList = function(currObj){
-            selectionService.addSelect(currObj);
-        };
-
     }])
 
-    .controller('InfoController', function($scope, selectionService) {
-
-        $scope.selects = selectionService.getSelection();
-    });
+    .controller('InfoController', ["$scope", 'dataService',  function($scope, dataService) {
+        $scope.info = dataService.getInfo();
+    }]);

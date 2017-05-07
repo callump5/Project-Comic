@@ -11,12 +11,13 @@
         <div ng-repeat="item in items | filter:{ name: filter }" class="tile">
        	  	<img src="{{item.img}}">
        	  	<h2>{{item.name}}</h2>
-       	   	<a href="/info"  onclick="select()" ng-click="getResult($index, item)">info</a>
+       	   	<a href="/info" ng-click="getResult($index, item)">info</a>
         </div>
     
         <h2>Results</h2>
   	    <p><code>$index:</code> {{indexResult.name}}</p>
   	    <p><code>item:</code> {{itemResult.name}}</p>
+  	    <p>{{someData.name}}</p>
 	
 	</div>
 </div>
@@ -27,4 +28,4 @@
 				<h2>{{x.name}}</h2>
 				<button class="buttonN" ng-click="Sremove($index)">info</button>
 				<p></p>
-				-->7
+				-->

@@ -1,4 +1,4 @@
-angular.module('OaDataApp', ['ngRoute', 'RouteControllers']);
+angular.module('OaDataApp', ['ngRoute', 'RouteControllers', 'SelectionService']);
  
 angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
