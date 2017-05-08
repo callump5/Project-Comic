@@ -11,9 +11,17 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/char.html',
         controller: 'CharController'
     })
-    .when('/info', {
-    	templateUrl: 'templates/info.html',
-    	controller: 'InfoController'
+    .when('/groups', {
+    	templateUrl: "templates/groups.html",
+    	controller: 'GroupsController'
+    })
+    .when('/charInfo', {
+    	templateUrl: 'templates/charInfo.html',
+    	controller: 'CharInfoController'
+    })
+    .when('/groupInfo', {
+    	templateUrl: 'templates/groupInfo.html',
+    	controller: 'GroupInfoController'
     });
 
 });

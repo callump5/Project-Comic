@@ -1,3 +1,4 @@
+// Characters:
 function character(name, group, img, info) {
 	this.name = name;
 	this.group = group;
@@ -32,7 +33,15 @@ var ganeth16 = new character("Ganeth", "guardian", "", "The Wise")
 
 var characters = [halJordan, sinestro, saintWalker, carolFarris, razor, ganeth1, ganeth2, ganeth3, ganeth4, ganeth5, ganeth6, ganeth7, ganeth8, ganeth9, ganeth10, ganeth11, ganeth12, ganeth13, ganeth14, ganeth15, ganeth16]
 
-var newChar = [];
+//Groups:
+function group(name, oath, img, info) {
+	this.name = name;
+	this.oath = oath
+	this.img = img;
+	this.info = info;
+}
 
-
+var greenLantern = new group("Green Lanterns", "Beware Green Lanterns Light", "imgs/portraits/hal.png", "Will Power")
+var blueLantern = new group("Blue Lantern", "Blue Lanterns Light!", "imgs/portraits/StWalker.png", "The Saint")
+var groups = [greenLantern, blueLantern]
     		

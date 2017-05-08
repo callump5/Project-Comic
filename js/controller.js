@@ -15,7 +15,26 @@
         };
     }])
 
-    .controller('InfoController', ["$scope", 'dataService',  function($scope, dataService) {
+    .controller('CharInfoController', ["$scope", 'dataService',  function($scope, dataService) {
         $scope.info = dataService.getInfo();
-        $scope.char = characters[$scope.info];
-    }]);
+        $scope.item = characters[$scope.info];
+    }])
+
+    .controller('GroupsController', ['$scope', 'dataService', function($scope, dataService) {
+        $scope.items = groups;
+
+        $scope.getResult = function($index) {
+        $scope.indexResult = $index;
+        
+        dataService.addInfo($scope.indexResult);
+        };
+    }])
+
+    .controller('GroupInfoController', ["$scope", 'dataService',  function($scope, dataService) {
+        $scope.info = dataService.getInfo();
+        $scope.item = groups[$scope.info];
+    }])
+
+
+    
+

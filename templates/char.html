@@ -1,17 +1,21 @@
 <div id="viewC">
-	<div id="hub" class="container">
+	<div id="hub">
 		<div class="row">
 			<div id="title" class="col-sm-12">
 				<h1>Characters</h1>
+			</div>					
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-12">
+					<input id="search" type="text" ng-model="filter" placeholder="Search for character">
 			</div>
 		</div>
-			
-		<input type="text" ng-model="filter" placeholder="Filter the list">
-            
+		   
         <div ng-repeat="item in items | filter:{ name: filter }" class="tile">
        	  	<img src="{{item.img}}">
        	  	<h2>{{item.name}}</h2>
-       	   	<a href="/info" ng-click="getResult($index, item)">info</a>
+       	   	<a href="/charInfo" ng-click="getResult($index, item)">info</a>
         </div>
    	</div>
 </div>
