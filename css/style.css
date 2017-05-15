@@ -18,7 +18,11 @@ button {
 
 /* Normal Css */
 	body {
-		background-image: url(/imgs/untitled1.png); 
+		background: url(/imgs/untitled1.png) no-repeat center center fixed; 
+ 		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		}
 
 	nav {
@@ -111,11 +115,11 @@ button {
     }
 
     #view{
-    	margin-top: 100px;
-    	padding-top: 20px;
+    	padding-top: 110px;
     	padding-right: 10px;
     	padding-left: 10px;
-    	text-align: left; 
+    	display: flex;
+    	flex-direction: row-reverse;
     }
 	
 /* Phone */
@@ -125,13 +129,7 @@ button {
 
 /*Tablets*/
 @media  screen and (min-width: 925px) {
-	body {
-		background-image: url(/imgs/wallpaper.jpg);
-
-	}
-
-	nav ul{
-	}
+	
 
 	nav ul li {
 		border-top: none;

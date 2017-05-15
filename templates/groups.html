@@ -1,23 +1,15 @@
-<div id="viewC">
-	<div id="hub" class="container">
-		<div class="row">
-			<div id="title" class="col-sm-12">
-				<h1>Groups</h1>
-			</div>					
+<div class="container">
+	<div class="row">
+		<div id="title" class="col-sm-12">
+			<h1>Groups</h1>
+		</div>					
+	</div>
+	
+	<div id="genItems">	
+		<div ng-repeat="item in items" class="tile">
+		    <img src="{{item.img}}">
+		    <a href="/groupInfo" ng-click="getResult($index, item)">{{item.name}}</a>
 		</div>
-		
-		<div class="row">
-			<div class="col-sm-12">
-					<input id="search" type="text" ng-model="filter" placeholder="Search for groups">
-			</div>
-		</div>
-		        
-        <div ng-repeat="item in items | filter:{ name: filter }" class="tile">
-       	  	<img src="{{item.img}}">
-       	  	<h2>{{item.name}}</h2>
-       	   	<a href="/groupInfo" ng-click="getResult($index, item)">info</a>
-        </div>
-   	</div>
+	</div>
 </div>
-
 

@@ -2,20 +2,64 @@
 	font-family: "myfont", Tahoma;
 }
 
-#infoView {
-	background: #45484d; /* Old browsers */
-	background: -moz-linear-gradient(left, #45484d 0%, #000000 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+#intel {
+	
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 75px;
+	margin-top: 50px;
+	padding: 20px;
+	min-height: 275px;
 
-	width: all;
+	background: #45484d; 
+	background: -moz-linear-gradient(left, #45484d 0%, #000000 100%);
+	background: -webkit-linear-gradient(left, #45484d 0%,#000000 100%); 
+	background: linear-gradient(to right, #45484d 0%,#000000 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
 	border: 4px solid #d3d3d3;
 	border-radius: 10px;
 	color: #d3d3d3;
-	margin: 0 10px;
-	margin-bottom: 50px;
-
 }
 
-#row1 h2, button, #search 
+#intel img {
+	display: none;
+	
+}
+
+#intel h1 {
+	font-size: 2em;
+}
+
+#intel a {
+	float: right;
+}
+
+#cInfo{
+	display: flex;
+	flex-direction: column;
+}
+
+#cInfo h1, h2, p {
+	padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+
+	}
+
+@media screen and (min-width: 800px){
+	#intel img {
+		display: block;
+		height: 225px;
+		width: 225px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		border: 4px solid #d3d3d3;
+		border-radius: 10px;
+	}
+
+
+}
