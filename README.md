@@ -4,28 +4,24 @@
 This website is for fans of DC Universe's 'Hal Jordan and the Green Lantern Corps' comic book series. 
 
 ### What does it do?
-It will allow you to get information on the many characters/groups/places that appear throughout the comic series.
+It will allow you to get information on the many characters and groups that appear throughout the comic series.
 
 Will also include a list of all 'episodes' in the series.
 
 
 ### How does it work
-The app will work by returning data based on click event that will update the log window and also customise the layout of the page 
+The app will work by returning data based on click event that will update the log window.
 
 ## Features
-
 ### Existing Features
-- None yet!
-
-### Features Left to Implement
 - Click event data fetch for:
 	- Characters
-	- Locations
 	- Groups
+
+### Features Left to Implement
 - App to track which comics a unique user owns/needs (in future)
  
 ## Tech Used
-
 ### Some the tech used includes:
 - [Bootstrap](http://getbootstrap.com/)
 	- We use **Bootstrap** to give our project a simple, responsive layout
