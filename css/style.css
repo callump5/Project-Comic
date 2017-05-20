@@ -5,13 +5,10 @@
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, button {
 	font-family: "myfont", Tahoma;
 	color: #d3d3d3;
 	font-size: 1.1em;
-}
-
-button {
 }
 
 /* Bootstrap Overwrite  */
@@ -115,12 +112,25 @@ button {
     }
 
     #view{
-    	padding-top: 110px;
+    	padding-top: 125px;
     	padding-right: 10px;
     	padding-left: 10px;
     	display: flex;
     	flex-direction: row-reverse;
     }
+
+    .button {
+    	background: #002400; /* Old browsers */
+		background: -moz-linear-gradient(45deg, #002400 0%, #005700 21%, #008a00 60%, #52b152 87%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, #002400 0%,#005700 21%,#008a00 60%,#52b152 87%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, #002400 0%,#005700 21%,#008a00 60%,#52b152 87%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#52b152',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */    
+		padding: 15px;
+		border: 2.5px solid white;
+		border-radius: 10px;
+		float: right;
+	}
+
 	
 /* Phone */
 @media screen and (max-width: 924px) {

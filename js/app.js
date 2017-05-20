@@ -15,6 +15,10 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     	templateUrl: "templates/groups.html",
     	controller: 'GroupsController'
     })
+    .when('/episodes', {
+        templateUrl: "templates/episodes.html",
+        controller: 'EpisodesController'
+    })
     .when('/charInfo', {
     	templateUrl: 'templates/charInfo.html',
     	controller: 'CharInfoController'
@@ -22,6 +26,10 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     .when('/groupInfo', {
     	templateUrl: 'templates/groupInfo.html',
     	controller: 'GroupInfoController'
+    })
+    .when('/reportMistake', {
+        templateUrl: 'templates/mistakeForm.html',
+        controller: 'ReportMistakeController'
     });
 
 });

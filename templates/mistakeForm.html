@@ -1,0 +1,31 @@
+<div class="container" id="intel">
+	<div class="row">
+		<div id="title" class="col-sm-12">
+			<h1>Report A Mistake</h1>
+		</div>					
+	</div>
+
+	<form name="mistakeForm" data-ng-submit="submitForm()" novalidate>
+		<div class="form-group">
+			<h2>Section:</h2>
+			<input type="text" name="section" class="form-control" data-ng-model="mistake.section" required>
+            <p data-ng-show="mistakeForm.section.$pristine" class="help-block">What section of the website is the mistake on</p>
+               
+		</div>
+		<div class="form-group">
+			<h2>Incorrect Information:</h2>
+			<input type="text" name="incorrectInfo" class="form-control" data-ng-model="mistake.incorrectInfo" required>
+            <p data-ng-show="mistakeForm.incorrectInfo.$pristine" class="help-block">Copy and paste the incorrect info here</p>
+               
+		</div>	
+		<div class="form-group">
+			<h2>Correct Information</h2>
+			<input type="text" name="corrected" class="form-control" data-ng-model="mistake.corrected" >
+            <p data-ng-show="mistakeForm.corrected.$pristine" class="help-block">Enter the correct information if known</p>
+               
+		</div>
+
+		<button type="submit" class="button"  ng-disabled="mistake4Form.$invalid">Submit</button>
+	</form>
+
+</div>
