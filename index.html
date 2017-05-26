@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/items.css">
     <link rel="stylesheet" type="text/css" href="css/info.css">
 
+    <meta charset="utf-8">
+
 
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
@@ -17,7 +19,6 @@
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
-
 <body>
     <nav id="navbar">
         <div id="header">
@@ -26,13 +27,13 @@
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </button>
         </div>
-        <ul id="myNav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/char">Characters</a></li>
-            <li><a href="/groups">Groups</a></li>
-            <li><a href="/episodes">Episodes List</a></li>
-            <li><a href="/reportMistake">Report Mistake</a></li>
-        </ul>
+
+        <ul id="myNav" aria-expanded="false" class="collapse">
+            <li><a data-toggle="collapse" data-target="#myNav" href="/">Home</a></li>
+            <li><a data-toggle="collapse" data-target="#myNav" href="/char">Characters</a></li>
+            <li><a data-toggle="collapse" data-target="#myNav" href="/groups">Groups</a></li>
+            <li><a data-toggle="collapse" data-target="#myNav" href="/episodes">Episodes List</a></li>
+            <li><a data-toggle="collapse" data-target="#myNav" href="/reportMistake">Report Mistake</a></li>
     </nav>
 
 
@@ -49,5 +50,7 @@
 <script src='js/app.js'></script>
 <script src='js/controller.js'></script>
 <script src='js/service.js'></script>
+
+
 </body>
 </html>

@@ -5,7 +5,7 @@
 		</div>					
 	</div>
 
-	<form name="mistakeForm" data-ng-submit="submitForm()" novalidate>
+	<form id="mform" name="mistakeForm" data-ng-submit="submitForm()" novalidate>
 		<div class="form-group">
 			<h2>Section:</h2>
 			<input type="text" name="section" class="form-control" data-ng-model="mistake.section" required>
@@ -25,7 +25,7 @@
                
 		</div>
 
-		<button type="submit" class="button"  ng-disabled="mistake4Form.$invalid">Submit</button>
+		<button type="submit" class="tap button"  ng-disabled="mistake4Form.$invalid">Submit</button>
 	</form>
 
 </div>

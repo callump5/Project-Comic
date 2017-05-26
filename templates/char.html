@@ -6,9 +6,10 @@
 	</div>
 	
 	<div id="genItems">	
-		<div ng-repeat="item in items" class="tile">
+		<div ng-repeat="item in items" class="tile tap">
 		    <img src="{{item.imgicon}}">
 		    <a href="/charInfo" ng-click="getResult($index, item)">{{item.name}}</a>
 		</div>
 	</div>
 </div>
+

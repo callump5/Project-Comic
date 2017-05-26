@@ -28,6 +28,17 @@
 	
 	border: 2.5px solid white;
 	border-radius: 10px;
+
+	
+}
+
+.tap{
+	cursor: pointer;
+ 	position: relative;
+}
+.tap:active {
+    top: 1px;
+    left: 1px;
 }
 
 .tile a {

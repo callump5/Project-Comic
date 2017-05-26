@@ -5,7 +5,7 @@
     })
 
     .controller('CharController', ['$scope', 'dataService', function($scope, dataService) {
-    
+        
         $scope.items = characters;
 
         $scope.getResult = function($index) {
@@ -46,18 +46,30 @@
         };
     }])
 
-    .controller("ReportMistakeController", ['$scope', function($scope){
+    .controller("ReportMistakeController", ['$scope', '$window', function($scope, $window){
        
-       $scope.mistakeReport = {};
+        $scope.mistakeReport = {};
 
         $scope.submitForm = function() {
-            if ($scope.mistakeForm.$valid) {
-                $scope.mistakeReport.section = $scope.mistake.section;
-                $scope.mistakeReport.incorrectInfo = $scope.mistake.incorrectInfo;
-        }
-        console.log($scope.mistakeReport.section + " " + $scope.mistakeReport.incorrectInfo);
-    }
-}])
+                if ($scope.mistakeForm.$valid) {
+                    $scope.mistakeReport.section = $scope.mistake.section;
+                    $scope.mistakeReport.incorrectInfo = $scope.mistake.incorrectInfo;
+                    $scope.mistakeReport.corrected = $scope.mistake.corrected;
+                    
+                    var report = "Thanks for the submission! \n \n" +
+                    "Section: \n" + $scope.mistakeReport.section + "\n \n" +
+                    "Incorrect Info: \n" + $scope.mistakeReport.incorrectInfo + "\n \n" +
+                    "Corrected Info: \n" + $scope.mistakeReport.corrected;
+                    $window.alert(report);
+
+
+                    $scope.mistake.section = " ";
+                    $scope.mistake.incorrectInfo = " ";
+                    $scope.mistake.corrected = " ";
+                      
+                }
+            }        
+    }]);
 
 
     
