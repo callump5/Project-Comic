@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Hal Jordan",
+    "group": 1,
+    "imgIcon": "imgs/portraits/halicon.png",
+    "img": "imgs/image/hal.png",
+    "info": "Hal Jordan was born in Coast City to Martin Jordan and Jessica Jordan, The middle child of three children. He lived with his older brother Jack and a younger brother Jim. As a young child, he idolized his father, a test pilot who worked for Ferris Aircraft. At a very young age, he had to face his greatest fears when his father died in a plane crash right before his eyes. Despite his family's wishes, he followed in his father's footsteps and eventually joined the United States Air Force on his 18th birthday. Many years later after witnessing the death of a shipwrecked alien by the name  of Abin Sur, member of the Green Lantern Corps, the power ring then chose Hal as Abins' replacementbecause of his ability to overcome great fear. Hal then went on to be trained by drill sergeant Kilowog, and his former mentor, now nemasis Sinestro"
+  },
+  {
+    "id": 2,
+    "name": "Thaal Sinestro",
+    "group": 1,
+    "imgIcon": "imgs/portraits/sinestro.png",
+    "img": "imgs/image/sinestro.png",
+    "info": "Thaal Sinestro of Korugar is the arch-nemesis of Green Lantern. At one point the greatest member of the Green Lantern Corps, he was corrupted by his power and exiled for crimes against his own people. He now seeks to impose his own order and control onto the universe, employing a yellow power ring to combat the green he has grown to despise. His prowess and ruthlessness have made him one of the most feared villains in existence, and eventually he establishes his own Sinestro Corps."
+  }
+]

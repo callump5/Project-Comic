@@ -57,9 +57,7 @@ h1, h2, h3, p, a, button {
 		color: #42a1f4;
 	}
 
-	#
-
-	#navbar{
+  #navbar{
 		display: flex;
 		flex-direction: column;
 		position: relative;

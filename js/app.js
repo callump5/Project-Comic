@@ -1,35 +1,34 @@
-angular.module('OaDataApp', ['ngRoute', 'RouteControllers', 'SelectionService']);
- 
-angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);  // Enable href routing without hashes
- 
-    $routeProvider.when('/', {
-        templateUrl: 'templates/home.html',
-        controller: 'HomeController'
-    })
-    .when('/char', {
-        templateUrl: 'templates/char.html',
-        controller: 'CharController'
-    })
-    .when('/groups', {
-    	templateUrl: "templates/groups.html",
-    	controller: 'GroupsController'
-    })
-    .when('/episodes', {
-        templateUrl: "templates/episodes.html",
-        controller: 'EpisodesController'
-    })
-    .when('/charInfo', {
-    	templateUrl: 'templates/charInfo.html',
-    	controller: 'CharInfoController'
-    })
-    .when('/groupInfo', {
-    	templateUrl: 'templates/groupInfo.html',
-    	controller: 'GroupInfoController'
-    })
-    .when('/reportMistake', {
-        templateUrl: 'templates/mistakeForm.html',
-        controller: 'ReportMistakeController'
+angular
+    .module('OaDataApp', ['ngRoute', 'RouteControllers'])
+    .config(function($locationProvider, $routeProvider) {
+        $locationProvider.html5Mode(true);  // Enable href routing without hashes
+        $routeProvider
+            .when('/', {
+                templateUrl: 'templates/home.html',
+                controller: 'HomeController'
+            })
+            .when('/characters', {
+                templateUrl: 'templates/characters/list.html',
+                controller: 'CharacterListController'
+            })
+            .when('/characters/:id', {
+                templateUrl: 'templates/characters/detail.html',
+                controller: 'CharacterDetailController'
+            })
+            .when('/episodes', {
+                templateUrl: 'templates/episodes/detail.html',
+                controller: 'EpisodesListController'
+            })
+            .when('/groups', {
+                templateUrl: 'templates/groups/list.html',
+                controller: 'GroupsListController'
+            })
+            .when('/groups/:id', {
+                templateUrl: 'templates/groups/detail.html',
+                controller: 'GroupDetailController'
+            })
+            .when('/reportMistake', {
+                templateUrl: 'templates/mistakeForm.html',
+                controller: 'ReportMistakeController'
+            })
     });
-
-});

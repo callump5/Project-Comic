@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Green Lanterns",
+    "oath": "In brightest day, in blackest night, No evil shall escape my sight, Let those who worship evil's might, Beware my power... Green Lantern's Light! ",
+    "img": "imgs/portraits/corpsIcons/willicon.png",
+    "imgBanner": "imgs/corpsImg/willpowersmall.png",
+    "info": "Chastened by the failure of The Manhunters, the Guardians decided that their newest force of soldiers for good would consist of living beings, ones who had free will and strong moral character. To arm this new legion of celestial knights, the Guardians created the Power Rings, rings of inconceivably advanced technology that allowed their wearers to project green beams of energy with which the bearer could conjure objects of any size or shape, limited only by his or her imagination and willpower. Although the connection between the Guardian Oans and the origin of the Green Lantern symbol has yet to be clarified, it has been revealed that the lantern itself has its roots inthe first life in the universe. Allegedly, the first life in the galaxy emerged on an unnamed foggy world, and when they developed a police force the first in the universe - the constabulary carried a lantern lit with a green chemical flame, hence a corp of Green Lanterns. It is believed that this ideal was adopted and spread throughout the galaxy as a symbol for law and justice and its ability to pierce confusion and uncertainty, eventually resulting in the formation of the Green Lantern Corps, with requisite power rings and lantern-shaped batteries along traditional lines."
+  },
+  {
+    "id": 2,
+    "name": "Sinestro Corps",
+    "oath": "In blackest day, in brightest night, Beware your fears made into light. Let those who try to stop what's right Burn like my power Sinestro's might!",
+    "img": "imgs/portraits/corpsIcons/fearicon.png",
+    "imgBanner": "imgs/corpsImg/fearsmall.png",
+    "info": "The Sinestro Corps is one of the nine Lantern Corps that draw power from the Emotional Electromagnetic Spectrum. They were created by the villain Sinestro to oppose the Green Lantern Corps, and bring order to the universe in a way which the guardians never tried; though fear. Their color is \"yellow\" and their power rings are fueled by fear, so their members are selected for their ability to inspire great fear in others. Their home planet is Qward and their representative entity is Parallax. "
+  }
+]
