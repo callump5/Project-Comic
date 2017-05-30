@@ -4,11 +4,10 @@
 			<h1>Groups</h1>
 		</div>					
 	</div>
-	
 	<div id="genItems">	
-		<div ng-repeat="item in items" class="tile" >
-		    <img src="{{item.img}}" >
-		    <a href="/groupInfo" ng-click="getResult($index, item)">{{item.name}}</a>
+		<div ng-repeat="group in groups" class="tile" >
+		    <img src="{{group.img}}" >
+		    <a href="/groups/{{group.id}}">{{group.name}}</a>
 		</div>
 	</div>
 </div>
