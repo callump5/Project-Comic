@@ -4,46 +4,40 @@
         
     })
 
-    .controller('CharController', ['$scope', 'dataService', function($scope, dataService) {
-        
-        $scope.items = characters;
+    .controller('CharacterListController', ['$scope', '$http',  function($scope, $http) {
+        $http.get('data/characters.json').then(function(response) {
+            $scope.characters = response.data;
 
-        $scope.getResult = function($index) {
-        $scope.indexResult = $index;
-        
-        dataService.addInfo($scope.indexResult);
-        };
+        });
     }])
 
-    .controller('CharInfoController', ["$scope", 'dataService',  function($scope, dataService) {
-        $scope.info = dataService.getInfo();
-        $scope.item = characters[$scope.info];
+    .controller('CharInfoController',  ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+        $http.get('data/characters.json').then(function(response) {
+            $scope.character = response.data.find(function (character) {
+                return (character.id === parseInt($routeParams.id));
+            });
+        });
     }])
 
-    .controller('GroupsController', ['$scope', 'dataService', function($scope, dataService) {
-        $scope.items = groups;
+    .controller('GroupsController', ['$scope', '$http',  function($scope, $http) {
+        $http.get('data/characters.json').then(function(response) {
+            $scope.characters = response.data;
 
-        $scope.getResult = function($index) {
-        $scope.indexResult = $index;
-        
-        dataService.addInfo($scope.indexResult);
-        };
+        });
     }])
 
-    .controller('GroupInfoController', ["$scope", 'dataService',  function($scope, dataService) {
-        $scope.info = dataService.getInfo();
-        $scope.item = groups[$scope.info];
+    .controller('GroupInfoController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+        $http.get('data/characters.json').then(function(response) {
+            $scope.character = response.data.find(function (character) {
+                return (character.id === parseInt($routeParams.id));
+            });
+        });
     }])
 
-    .controller('EpisodesController', ['$scope', 'dataService', function($scope, dataService) {
-    
-        $scope.items = episodes;
-
-        $scope.getResult = function($index) {
-        $scope.indexResult = $index;
-        
-        dataService.addInfo($scope.indexResult);
-        };
+    .controller('EpisodesController', ['$scope', '$http',  function($scope, $http) {
+        $http.get('data/characters.json').then(function(response) {
+            $scope.characters = response.data;
+        });
     }])
 
     .controller("ReportMistakeController", ['$scope', '$window', function($scope, $window){

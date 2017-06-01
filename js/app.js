@@ -1,4 +1,4 @@
-angular.module('OaDataApp', ['ngRoute', 'RouteControllers', 'SelectionService']);
+angular.module('OaDataApp', ['ngRoute', 'RouteControllers']);
  
 angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);  // Enable href routing without hashes
@@ -7,9 +7,13 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
     })
-    .when('/char', {
+    .when('/characters', {
         templateUrl: 'templates/char.html',
-        controller: 'CharController'
+        controller: 'CharacterListController'
+    })
+    .when('/characters/:id', {
+        templateUrl: 'templates/charInfo.html',
+        controller: 'CharInfoController'
     })
     .when('/groups', {
     	templateUrl: "templates/groups.html",
@@ -18,10 +22,6 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
     .when('/episodes', {
         templateUrl: "templates/episodes.html",
         controller: 'EpisodesController'
-    })
-    .when('/charInfo', {
-    	templateUrl: 'templates/charInfo.html',
-    	controller: 'CharInfoController'
     })
     .when('/groupInfo', {
     	templateUrl: 'templates/groupInfo.html',

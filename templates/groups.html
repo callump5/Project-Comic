@@ -6,7 +6,7 @@
 	</div>
 	
 	<div id="genItems">	
-		<div ng-repeat="item in items" class="tile" >
+		<div ng-repeat="character in characters" class="tile" >
 		    <img src="{{item.img}}" >
 		    <a href="/groupInfo" ng-click="getResult($index, item)">{{item.name}}</a>
 		</div>

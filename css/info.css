@@ -2,8 +2,7 @@
 	font-family: "myfont", Tahoma;
 }
 
-#intel {
-	
+#intel {	
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 75px;
@@ -45,11 +44,6 @@
 	margin-bottom: 10px;
 }
 
-
-@media screen and (max-width: 400px) {
-
-
-	}
 
 @media screen and (min-width: 800px){
     #intel {

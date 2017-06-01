@@ -5,7 +5,7 @@
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif
 }
 
-h1, h2, h3, p, a, button {
+h1, h2, h3, p, a, button, input {
 	font-family: "myfont", Tahoma;
 	color: #d3d3d3;
 	font-size: 1.1em;
