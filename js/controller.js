@@ -20,23 +20,23 @@
     }])
 
     .controller('GroupsController', ['$scope', '$http',  function($scope, $http) {
-        $http.get('data/characters.json').then(function(response) {
-            $scope.characters = response.data;
+        $http.get('data/groups.json').then(function(response) {
+            $scope.groups = response.data;
 
         });
     }])
 
     .controller('GroupInfoController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
-        $http.get('data/characters.json').then(function(response) {
-            $scope.character = response.data.find(function (character) {
-                return (character.id === parseInt($routeParams.id));
+        $http.get('data/groups.json').then(function(response) {
+            $scope.group = response.data.find(function (group) {
+                return (group.id === parseInt($routeParams.id));
             });
         });
     }])
 
     .controller('EpisodesController', ['$scope', '$http',  function($scope, $http) {
-        $http.get('data/characters.json').then(function(response) {
-            $scope.characters = response.data;
+        $http.get('data/episode.json').then(function(response) {
+            $scope.episodes = response.data;
         });
     }])
 

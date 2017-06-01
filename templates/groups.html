@@ -1,14 +1,13 @@
 <div class="container">
-	<div class="row">
-		<div id="title" class="col-sm-12">
-			<h1>Groups</h1>
-		</div>					
+	<div id="search">
+		<h1 id="title">Groups</h1>
+		<input id="searchInput" placeholder="Search" ng-model="filter">
 	</div>
 	
 	<div id="genItems">	
-		<div ng-repeat="character in characters" class="tile" >
-		    <img src="{{item.img}}" >
-		    <a href="/groupInfo" ng-click="getResult($index, item)">{{item.name}}</a>
+		<div ng-repeat="group in groups | filter:{ name: filter }" class="tile" >
+		    <img src="{{group.imgIcon}}" >
+		    <a href="/groups/{{group.id}}" >{{group.name}}</a>
 		</div>
 	</div>
 </div>

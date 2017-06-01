@@ -23,7 +23,7 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
         templateUrl: "templates/episodes.html",
         controller: 'EpisodesController'
     })
-    .when('/groupInfo', {
+    .when('/groups/:id', {
     	templateUrl: 'templates/groupInfo.html',
     	controller: 'GroupInfoController'
     })
