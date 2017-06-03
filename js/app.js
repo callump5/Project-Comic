@@ -8,24 +8,24 @@ angular.module('OaDataApp').config(function($locationProvider, $routeProvider) {
         controller: 'HomeController'
     })
     .when('/characters', {
-        templateUrl: 'templates/char.html',
+        templateUrl: 'templates/characters/char.html',
         controller: 'CharacterListController'
     })
     .when('/characters/:id', {
-        templateUrl: 'templates/charInfo.html',
+        templateUrl: 'templates/characters/charInfo.html',
         controller: 'CharInfoController'
     })
     .when('/groups', {
-    	templateUrl: "templates/groups.html",
+    	templateUrl: "templates/groups/groups.html",
     	controller: 'GroupsController'
+    })
+    .when('/groups/:id', {
+        templateUrl: 'templates/groups/groupInfo.html',
+        controller: 'GroupInfoController'
     })
     .when('/episodes', {
         templateUrl: "templates/episodes.html",
         controller: 'EpisodesController'
-    })
-    .when('/groups/:id', {
-    	templateUrl: 'templates/groupInfo.html',
-    	controller: 'GroupInfoController'
     })
     .when('/reportMistake', {
         templateUrl: 'templates/mistakeForm.html',

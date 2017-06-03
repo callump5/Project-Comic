@@ -39,6 +39,10 @@ h1, h2, h3, p, a, button, input {
    		margin-top:0px;
 	}
 
+	nav ul {
+		width: 100%;
+	}
+
 	nav ul li {
 		padding: 10px;
 		text-align: center;
@@ -57,7 +61,6 @@ h1, h2, h3, p, a, button, input {
 		color: #42a1f4;
 	}
 
-	#
 
 	#navbar{
 		display: flex;
@@ -79,6 +82,7 @@ h1, h2, h3, p, a, button, input {
 
 	#header{
 		height: 101px;
+		width: 100%;
 	}
 
 	#logopic {
@@ -112,7 +116,7 @@ h1, h2, h3, p, a, button, input {
     }
 
     #view{
-    	padding-top: 125px;
+    	padding-top: 20px;
     	padding-right: 10px;
     	padding-left: 10px;
     	display: flex;
@@ -131,14 +135,8 @@ h1, h2, h3, p, a, button, input {
 		float: right;
 	}
 
-	
-/* Phone */
-@media screen and (max-width: 924px) {
-	
-}
 
-/*Tablets*/
-@media  screen and (min-width: 1040px) {
+@media  screen and (min-width: 940px) {
 	
 
 	nav ul li {
@@ -170,6 +168,11 @@ h1, h2, h3, p, a, button, input {
 		margin-top: 20px;
 		margin-right: 40px;
 	}
+
+	#view{
+		margin-top: 35px;
+		padding: 0;
+	}
 }
 
 /*Laptops+*/
@@ -178,9 +181,9 @@ h1, h2, h3, p, a, button, input {
 		background-size: cover;
 	}
 
-	#container {
-		margin-top: 50px;
-		margin-right: 90px;
+	#view {
+		padding: 0;
+		margin-top: 55px;
 	}
 
 	
