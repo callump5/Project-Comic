@@ -21,7 +21,7 @@ h1, h2, h3, p, a, button, input {
 		}
 
 	nav {
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002400+0,005700+21,008a00+60,52b152+87 */
+		/* use to edit and share this gradient: http://colorzilla.com/gradient-editor/#002400+0,005700+21,008a00+60,52b152+87 */
 		background: #002400; /* Old browsers */
 		background: -moz-linear-gradient(45deg, #002400 0%, #005700 21%, #008a00 60%, #52b152 87%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(45deg, #002400 0%,#005700 21%,#008a00 60%,#52b152 87%); /* Chrome10-25,Safari5.1-6 */
