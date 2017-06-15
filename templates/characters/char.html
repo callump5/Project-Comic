@@ -7,7 +7,7 @@
 	<div id="genItems">	
 		<div ng-repeat="character in characters | filter:{ name: filter }" class="tile tap">
 		    <img src="{{character.imgIcon}}">
-		    <a href="/characters/{{character.id}}">{{character.name}}</a>
+		    <a href="characters/{{character.id}}">{{character.name}}</a>
 		</div>
 	</div>
 </div>
