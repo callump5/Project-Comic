@@ -15,7 +15,7 @@ h1, h2, h3, p, a, button, input {
 
 /* Normal Css */
 	body {
-		background: url(imgs/background.png) no-repeat center center fixed; 
+		background: url(imgs/portraits/corpsIcons/greedicon.png) no-repeat center center fixed; 
  		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
