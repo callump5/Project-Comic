@@ -1,7 +1,7 @@
 /* Fonts: */
 @font-face{
 	font-family: "myfont";
-	src: url("https://fonts/BankGothic%20Bold.ttf") format("truetype");
+	src: url("../fonts/BankGothic%20Bold.ttf") format("truetype");
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif
 }
 
