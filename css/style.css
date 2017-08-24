@@ -2,7 +2,7 @@
 @font-face{
 	font-family: "myfont";
 	src: url("../fonts/BankGothic%20Bold.ttf") format("truetype"),
-		url('../fonts/BankGothic%20Bold.woff2') format('woff2');
+		url('../fonts/bankgothic_bold-webfont.woff2') format('woff2');
 	font-family: Futura,"Trebuchet MS",Arial,sans-serif
 }
 
