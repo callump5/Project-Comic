@@ -70,7 +70,7 @@
                     var Areport = 'Please fill in the following fields!: \n \n';
                     if ($scope.mistakeReport.section === '') {
                         Areport += "Section \n"
-                    } else {
+                    } else if ($scope.incorrectInfo === '') {
                         Areport += "Incorrect Info \n"
                     }
 
