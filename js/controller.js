@@ -54,12 +54,8 @@
                     "Section: \n" + $scope.mistakeReport.section + "\n \n" +
                     "Incorrect Info: \n" + $scope.mistakeReport.incorrectInfo + "\n \n" +
                     "Corrected Info: \n" + $scope.mistakeReport.corrected;
+
                     $window.alert(report);
-
-
-                    $scope.mistake.section = " ";
-                    $scope.mistake.incorrectInfo = " ";
-                    $scope.mistake.corrected = " ";
                       
                 }
             }        
