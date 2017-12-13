@@ -62,6 +62,5 @@
                     $scope.mistake.corrected = " ";
                       
                 }
-            }        
-}]);
-
+            };
+    }]);
