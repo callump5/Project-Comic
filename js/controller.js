@@ -60,8 +60,8 @@
                     $scope.mistake.section = " ";
                     $scope.mistake.incorrectInfo = " ";
                     $scope.mistake.corrected = " ";
-
+                      
                 }
-            }
-    }]);
+            }        
+}]);
 
