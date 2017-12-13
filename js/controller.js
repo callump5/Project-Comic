@@ -61,22 +61,6 @@
                     $scope.mistake.incorrectInfo = " ";
                     $scope.mistake.corrected = " ";
                       
-                }  else {
-
-                    $scope.mistakeReport.section = $scope.mistake.section;
-                    $scope.mistakeReport.incorrectInfo = $scope.mistake.incorrectInfo;
-                    $scope.mistakeReport.corrected = $scope.mistake.corrected;
-
-                    var Areport = 'Please fill in the following fields!: \n \n';
-                    if ($scope.mistakeReport.section === '') {
-                        Areport += "Section \n"
-                    } else if ($scope.incorrectInfo === '') {
-                        Areport += "Incorrect Info \n"
-                    }
-
-                    $window.alert(Areport);
-
-
                 }
             }        
     }]);
