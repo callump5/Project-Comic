@@ -23,7 +23,7 @@ The app will work by returning data based on click event that will update the lo
 	- Episode List
 
 ### Future Features
-- Uer log in to keep track of owned comics 
+- User log in to keep track of owned comics 
  
 ## Tech Used
 ### Some the tech used includes:
