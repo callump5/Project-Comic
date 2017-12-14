@@ -1,12 +1,15 @@
 # Angular Todo App
+
+- Hosted Link: https://github.com/callump5/Project-Comic/edit/master/README.md
+- Github Link:https://github.com/callump5/Project-Comic
+
 ## Overview
 ### What is this app for?
 This website is for fans of DC Universe's 'Hal Jordan and the Green Lantern Corps' comic book series. 
 
 ### What does it do?
-It will allow you to get information on the many characters and groups that appear throughout the comic series.
-
-Will also include a list of all 'episodes' in the series.
+This site will allow users to find information on the many characters and groups that appear throughout the comic series.
+The site will also include a list of all 'episodes' in the series.
 
 
 ### How does it work
@@ -17,9 +20,10 @@ The app will work by returning data based on click event that will update the lo
 - Click event data fetch for:
 	- Characters
 	- Groups
+	- Episode List
 
-### Features Left to Implement
-- App to track which comics a unique user owns/needs (in future)
+### Future Features
+- Uer log in to keep track of owned comics 
  
 ## Tech Used
 ### Some the tech used includes:
