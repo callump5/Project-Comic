@@ -1,6 +1,6 @@
 # Angular Todo App
 
-- Hosted Link: https://github.com/callump5/Project-Comic/edit/master/README.md
+- Hosted Link: https://github.com/callump5/Project-Comic
 - Github Link:https://github.com/callump5/Project-Comic
 
 ## Overview
